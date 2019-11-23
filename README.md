@@ -21,6 +21,25 @@ $playerStats = $stats->getPlayer(4241463);
 
 The return from `getPlayer()` will be a `Player` object, which includes their ID and a `seasons` property which is an array of `PlayerSeason` objects, containing the stats for the player that season.
 
+### Team Stats
+
+Fetching stats for teams is similar.
+
+The return from `getTeam()` will be a `Team` object, which includes their ID and a `seasons` property which is an array of `TeamSeason` objects.
+
+```php
+$stats = new DanAbrey\ESPNCollegeFootballStats\ESPNCollegeFootballStats();
+$teamStats = $stats->getTeam(333);
+```
+
+By default, it will return the last four seasons' worth of data. You can change this by passing an array of seasons to `$stats->setSeasons()`.
+
+```php
+$stats = new DanAbrey\ESPNCollegeFootballStats\ESPNCollegeFootballStats();
+$stats->setTeamSeasons([2015, 2016]);
+$teamStats = $stats->getTeam(333);
+```
+
 ## Disclaimer
 
 This package is intended as a proof of concept experiment, I highly advise against using the ESPN API (which isn't documented) for anything other than hobby personal use.
