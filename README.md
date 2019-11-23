@@ -2,7 +2,7 @@
 
 Object-oriented PHP package for reading data from the ESPN JSON API.
 
-[![Build Status](https://travis-ci.com/danabrey/espn-ncaa-stats-scraper.svg?branch=master)](https://travis-ci.com/danabrey/espn-ncaa-stats-scraper)
+[![Build Status](https://travis-ci.com/danabrey/espn-college-football-stats.svg?branch=master)](https://travis-ci.com/danabrey/espn-college-football-stats)
 
 ## Installation
 
