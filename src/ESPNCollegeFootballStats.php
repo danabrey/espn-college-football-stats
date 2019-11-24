@@ -49,7 +49,7 @@ class ESPNCollegeFootballStats
         foreach ($this->seasons as $season) {
             $json = file_get_contents(
                 sprintf(
-                    'https://site.web.api.espn.com/apis/common/v3/sports/football/college-football/athletes/%s/stats?region=gb&lang=en&contentorigin=espn&season=%s',
+                    'https://site.web.api.espn.com/apis/site/v2/sports/football/college-football/teams/%s/athletes/statistics?region=us&lang=en&contentorigin=espn&season=%s',
                     $id,
                     $season
                 )
