@@ -10,6 +10,8 @@ Via Composer:
 
 `composer require danabrey/espn-college-football-stats`
 
+**Note**: v2.0 removes support for PHP versions below 7.4. If using PHP 7.0-7.3, use the latest version of v1.0 of this package.
+
 ## Usage
 
 Scrape a player's stats by passing their ESPN player ID (found in the URL e.g. `https://www.espn.co.uk/college-football/player/stats/_/id/4241463/jerry-jeudy`)

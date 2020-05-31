@@ -42,7 +42,7 @@ class TeamStatsExtractor
         $this->data = json_decode($json, true);
     }
 
-    public function extractSeasonData()
+    public function extractSeasonData(): TeamSeason
     {
         $teamSeason = [];
         $teamSeason['year'] = $this->data['requestedSeason']['year'];

@@ -42,7 +42,10 @@ class PlayerStatsExtractor
         $this->data = json_decode($json, true);
     }
 
-    public function extractSeasonData()
+    /**
+     * @return PlayerSeason[]|array
+     */
+    public function extractSeasonData(): array
     {
         $seasons = [];
 

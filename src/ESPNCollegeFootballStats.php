@@ -27,10 +27,10 @@ class ESPNCollegeFootballStats
         }
 
         $player = new Player();
-        $player->setId($id);
+        $player->id = $id;
 
         $seasons = (new PlayerStatsExtractor($json))->extractSeasonData();
-        $player->setSeasons($seasons);
+        $player->seasons = $seasons;
 
         return $player;
     }
@@ -42,7 +42,7 @@ class ESPNCollegeFootballStats
         }
 
         $team = new Team();
-        $team->setId($id);
+        $team->id = $id;
 
         $seasons = [];
 
@@ -58,7 +58,7 @@ class ESPNCollegeFootballStats
             $seasons[] = (new TeamStatsExtractor($json))->extractSeasonData();
         }
 
-        $team->setSeasons($seasons);
+        $team->seasons = $seasons;
 
         return $team;
     }
